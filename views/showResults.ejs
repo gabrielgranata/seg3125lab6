@@ -1,4 +1,5 @@
 <html lang="en-US">
+
 <head>
     <title>Survey Analysis</title>
 </head>
@@ -7,21 +8,58 @@
     <h1>Survey analysis</h1>
     <h2>Colors</h2>
     <ul>
-    <% for (var i=0; i<results[0].length; i++){ %>
-        <li><%= results[0][i].color %> :  <%= results[0][i].count %></li>
-    <% } %>    
+        <% for (var i=0; i<results[0].length; i++){ %>
+            <li>
+                <%= results[0][i].color %> :
+                    <%= results[0][i].count %>
+            </li>
+            <% } %>
     </ul>
     <h2>Fruits</h2>
     <ul>
-    <% for (var i=0; i<results[1].length; i++){ %>
-        <li><%= results[1][i].fruit %> :  <%= results[1][i].count %></li>
-    <% } %>    
+        <% for (var i=0; i<results[1].length; i++){ %>
+            <li>
+                <%= results[1][i].fruit %> :
+                    <%= results[1][i].count %>
+            </li>
+            <% } %>
     </ul>
     <h2>Animals</h2>
     <ul>
-    <% for (var i=0; i<results[2].length; i++){ %>
-        <li><%= results[2][i].animal %> :  <%= results[2][i].count %></li>
-    <% } %>    
+        <% for (var i=0; i<results[2].length; i++){ %>
+            <li>
+                <%= results[2][i].animal %> :
+                    <%= results[2][i].count %>
+            </li>
+            <% } %>
+    </ul>
+    <h2>Movies</h2>
+    <ul>
+        <% for (var i=0; i<results[3].length; i++){ %>
+            <li>
+                <%= results[3][i].movie %> :
+                    <%= results[3][i].count %>
+            </li>
+            <% } %>
+    </ul>
+    <h2>Sodas</h2>
+    <ul>
+        <% for (var i=0; i<results[4].length; i++){ %>
+            <li>
+                <%= results[4][i].soda %> :
+                    <%= results[4][i].count %>
+            </li>
+            <% } %>
+    </ul>
+    <h2>Sports</h2>
+    <ul>
+        <% for (var i=0; i<results[5].length; i++){ %>
+            <li>
+                <%= results[5][i].sport %> :
+                    <%= results[5][i].count %>
+            </li>
+            <% } %>
     </ul>
 </body>
+
 </html>
